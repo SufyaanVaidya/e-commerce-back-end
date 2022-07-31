@@ -6,7 +6,16 @@ class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    categories: {
+      type: DataTypes.STRING,
+      primaryKey: true,
+      autoIncrement: true
+    }
   },
   {
     sequelize,
