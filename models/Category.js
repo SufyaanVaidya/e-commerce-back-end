@@ -9,12 +9,13 @@ Category.init(
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
+      allowNull: false
     },
     categories: {
       type: DataTypes.STRING,
-      primaryKey: true,
-      autoIncrement: true
+      allowNull: false,
+      
     }
   },
   {
